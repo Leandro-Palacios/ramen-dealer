@@ -188,59 +188,9 @@ width: 50%;}
     
 }
 
-.menuSeleccion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .menuSeleccion a {
-    text-decoration: none;
-    font-family: 'Press Start 2P', cursive;
-    color: black;
-    padding-bottom: 2rem;
-  }
-  
-  .menuSeleccion h2 {
-    font-family: 'Press Start 2P', cursive;
-    padding: 1rem;
-  }
-  
-  .menuSeleccion img {
-    padding: 2rem;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-
-.menuSeleccion div { background-color: #24789D;}
-
-.menuSeleccion div h2 {font-family: 'Press Start 2P', cursive;
-padding: 2rem;
-}
-
-.menuSeleccion div img { padding: 2rem;}
-
 .menuNavegador { background-color: #24789D;
     padding-bottom: 1rem;
 }
-
-.estiloMenu {font-family: 'Press Start 2P', cursive; 
-padding: 2rem;}
-.estiloMenu h2 { padding-bottom: 2rem;
-    font-size: 2rem;}
-
-.estiloMenu h3 {padding-bottom: 1rem;
-    padding-top: 1rem;
-    font-size: 1.5rem;}
-
-.estiloMenu p { width: 30%;
-padding-top: 1rem;
-padding-bottom: 1rem;}
-
-.menuImagen { width: 50%;
-padding: 2rem;}
 
 .promociones { 
     font-family: 'Press Start 2P', cursive;
@@ -336,7 +286,8 @@ padding: 2rem;}
     justify-content: center;
     text-align: center;}
 
-.p1Andreas {grid-area: p1;
+.p1Andreas {
+    grid-area: p1;
     font-size: 1.5rem;
     padding: 1rem;
     margin-left: 10rem;
@@ -394,3 +345,67 @@ flex-direction: row;
 justify-content: space-between;
 align-items: center;}
 
+/* estilos ramen dumplings baos */
+
+.estiloMenu { 
+    font-family: 'Press Start 2P', cursive; 
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "menuSeleccion menuSeleccion"
+    "menuParrafos menuImagen"
+    "haceTuPedido1 haceTuPedido1"; }
+
+.menuImagen { 
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    grid-area: menuImagen;
+    justify-content: center;
+    align-content: center;
+}
+
+.menuImagen img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.menuSeleccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    grid-area: menuSeleccion;
+    font-size: 25px;
+    margin-bottom: 5rem;
+}
+
+.menuParrafos {
+    grid-area: menuParrafos;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 20px;
+  }
+
+.haceTuPedido1 {
+    grid-area: haceTuPedido;
+    display: flex;
+    justify-self: center;
+  align-self: center;
+  }
+
+  .haceTuPedido1 a {
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: red;
+    padding: 10px 20px;
+    text-align: center;
+    justify-self: center;
+    align-self: center; 
+    padding: 2rem;
+  }
