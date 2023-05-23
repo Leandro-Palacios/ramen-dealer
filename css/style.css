@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.fondoDePantalla { background-image: url(../assets/imagenes/fondo-pagina-web.png);
+color: black;
+width: 100%;
+}
+
+h1 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 4rem;
+    padding-left: 1rem;
+}
+
+a { text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    color:black;
+    padding-bottom: 2rem;
+}
+
+nav { display: flex;
+    flex-direction: row;
+    font-family: 'Press Start 2P', cursive; 
+    font-size: 1.7rem;
+    color: rgb(226, 224, 224); 
+    margin-bottom: 3rem;
+    padding-left: 1rem;
+}
+
+.navbar { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.contenedorNav { 
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+}
+
+.sobreNosotros {
+    display: flex;
+    width: 100%;
+}
+.contenedorNosotros { display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+    "h2 ramenDibujo"
+    "p ramenDibujo"
+    "a ramenDibujo"
+    ". ramenDibujo";
+    
+ }
+.contenedorNosotros div { display: flex;
+    justify-content: space-evenly;}
+
+.contenedorNosotros h2 { 
+    font-family: 'Press Start 2P', cursive;
+    color:#24789D;
+    padding: 1rem;
+    grid-column: 1; 
+    grid-row: 1;
+    grid-area: h2;
+    justify-self: center; 
+    align-self: flex-end ;
+    font-size: 25px; 
+}
+
+.contenedorNosotros p {font-family: 'Press Start 2P', cursive;
+    padding: 1rem;
+    grid-column: 1; 
+    grid-row: 2 / span 2;
+    grid-area: p;
+    justify-self: center; /* Centrar horizontalmente en la columna */
+    align-self: flex-start;
+    font-size: 20px;
+    margin-top: 0%;
+    margin-left: 5rem;
+}
+
+.ramenDibujo { 
+    grid-area: ramenDibujo;
+    padding: 2rem;
+    object-fit: cover;
+    width: 70%;
+    grid-column: 2; /* Segunda columna */
+    grid-row: 1 / span 4; /* Ocupa las filas 1 a 6 */
+    justify-self: center; /* Centrar horizontalmente en la columna */
+    align-self: center;
+}
+
+.haceTuPedido { 
+    grid-column: 1; 
+    grid-row: 3; 
+    grid-area: a;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: red;
+    padding: 10px 20px;
+    text-align: center;
+    justify-self: center;
+    align-self: center; 
+    padding: 2rem;
+}
+
+.take {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+  }
+  
+  .take h2 {
+    position: absolute;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 25px;
+    border: 0.4rem solid black;
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .caja1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 3.5rem;
+    background-color: #24789D;
+  }
+
+
+.contacto h2{ font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    color:#24789D;
+padding: 2rem;}
+
+.contacto form { padding: 2rem;
+width: 50%;}
+
+.seguinos { 
+    font-family: 'Press Start 2P', cursive;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem;
+    width: 100%;}
+
+.seguinos ul {
+    justify-content: right;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 2rem;
+}
+
+.seguinos2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #24789D;
+    padding: 3rem;
+    
+}
+
+.menuSeleccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .menuSeleccion a {
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    color: black;
+    padding-bottom: 2rem;
+  }
+  
+  .menuSeleccion h2 {
+    font-family: 'Press Start 2P', cursive;
+    padding: 1rem;
+  }
+  
+  .menuSeleccion img {
+    padding: 2rem;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+.menuSeleccion div { background-color: #24789D;}
+
+.menuSeleccion div h2 {font-family: 'Press Start 2P', cursive;
+padding: 2rem;
+}
+
+.menuSeleccion div img { padding: 2rem;}
+
+.menuNavegador { background-color: #24789D;
+    padding-bottom: 1rem;
+}
+
+.estiloMenu {font-family: 'Press Start 2P', cursive; 
+padding: 2rem;}
+.estiloMenu h2 { padding-bottom: 2rem;
+    font-size: 2rem;}
+
+.estiloMenu h3 {padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-size: 1.5rem;}
+
+.estiloMenu p { width: 30%;
+padding-top: 1rem;
+padding-bottom: 1rem;}
+
+.menuImagen { width: 50%;
+padding: 2rem;}
+
+.promociones { 
+    font-family: 'Press Start 2P', cursive;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    grid-template-areas:
+    "promo promo"
+    "p1Des p2Martes";
+}
+
+.promo { 
+    grid-area: promo;
+    color: #24789D;
+    border-style: solid; 
+    border-width: 0.4rem;
+    border-color: black;
+    background-color: white;
+    height: 5rem;
+    width: fit-content;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    font-size: 25px;
+}
+
+.p1Des { 
+    grid-area: p1;
+    background-color: #24789D;
+    color: white;
+    border-style: solid; 
+    border-color: #24789D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem;
+    font-size: 20px;
+    width: fit-content;
+    padding: 5rem;}
+    
+
+.p2Martes { 
+    grid-area: p2;
+    background-color: #24789D;
+    color: white;
+    border-style: solid; 
+    border-color: #24789D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem;
+    font-size: 20px;
+    width: fit-content;
+    padding: 4rem;
+    text-align: center;}
+
+.sucursales { font-family: 'Press Start 2P', cursive; }
+
+.sucursales h2 { color: #24789D;
+font-size: 2rem;
+padding: 2rem;
+width: 50%;}
+
+.sucursales h3 { padding-left: 2rem;
+font-size: 1.5rem;}
+
+.sucursales p { font-size: 1rem;
+padding: 2rem;}
+
+.sucursales img { padding: 2rem;}
+
+.gridNosotros { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "conoce andreas"
+    "p1 andreas"
+    "resto trayectoria "
+    "resto p2";
+    gap: 10px;}
+
+.conoce {
+    grid-area: conoce;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;}
+
+.p1Andreas {grid-area: p1;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-left: 10rem;
+    justify-items: center;
+    text-align: center; 
+    width: 100%;}
+
+.andreas {
+    grid-area: andreas;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    object-fit: cover;
+    width: 100%;
+    margin-right: 2rem;}
+
+.resto {
+    grid-area: resto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    margin: auto;}
+
+.p2Todo {grid-area: p2;}
+.trayectoria {grid-area: trayectoria;}
+.jefeDeCocina {font-family: 'Press Start 2P', cursive;}
+
+.jefeDeCocina h2 {font-size: 2rem;
+padding: 1rem;}
+
+.trayectoria { font-family: 'Press Start 2P', cursive;}
+
+.trayectoria h2 { 
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;}
+
+.p2 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    display: flex;
+    text-align: center;}
+
+.contenedorMenu { 
+background-color: #24789D;
+width: 100%;
+right: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;}
+
