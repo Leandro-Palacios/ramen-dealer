@@ -388,14 +388,19 @@ align-items: center;}
     grid-area: menuParrafos;
     font-family: 'Press Start 2P', cursive;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 20px;
+    justify-content: center;
+    
   }
 
 .haceTuPedido1 {
-    grid-area: haceTuPedido;
+    grid-area: haceTuPedido1;
     display: flex;
     justify-self: center;
-  align-self: center;
+    align-self: center;
   }
 
   .haceTuPedido1 a {
