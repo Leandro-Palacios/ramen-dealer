@@ -25,13 +25,18 @@ a { text-decoration: none;
     padding-bottom: 2rem;
 }
 
-nav { display: flex;
+.navbarAzul {
+    display: flex;
     flex-direction: row;
-    font-family: 'Press Start 2P', cursive; 
-    font-size: 1.7rem;
-    color: rgb(226, 224, 224); 
-    margin-bottom: 3rem;
-    padding-left: 1rem;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-top: 4rem;
+    padding-left: 4rem;
+    gap: 30px;
+    font-size: 2rem;
+    background-color: #24789D;
+    width: 100%;
 }
 
 .navbar { 
@@ -40,15 +45,23 @@ nav { display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
+    padding-top: 4rem;
+    padding-left: 4rem;
     gap: 30px;
-    margin-left: 100px;
-    margin-top: 20px;
+    font-size: 2rem;
 }
 
 .contenedorNav { 
     display: flex;
     flex-direction: row;
     justify-content: baseline;
+}
+
+.contenedorNavAzul { 
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    background-color: #24789D;
 }
 
 .sobreNosotros {
@@ -357,8 +370,8 @@ padding: 2rem;}
 .contenedorMenu { 
     background-color: #24789D;
     width: 100vw;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items:center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: auto 1fr;
