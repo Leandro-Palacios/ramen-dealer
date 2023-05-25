@@ -8,9 +8,11 @@ html{
     font-size: 62.5%;
 }
 
-.fondoDePantalla { background-image: url(../assets/imagenes/fondo-pagina-web.png);
-color: black;
-width: 100%;
+body { 
+    background-image: url(../assets/imagenes/fondo-pagina-web.png);
+    background-size: cover;
+    min-height: 100vh;
+
 }
 
 h1 {
@@ -24,6 +26,8 @@ a { text-decoration: none;
     color:black;
     padding-bottom: 2rem;
 }
+
+/* barra de navegacion con y sin color de fondo */
 
 .navbarAzul {
     display: flex;
@@ -64,11 +68,14 @@ a { text-decoration: none;
     background-color: #24789D;
 }
 
+/* estilo correspondiente al html index */
+
 .sobreNosotros {
     display: flex;
     width: 100%;
 }
-.contenedorNosotros { display: grid;
+.contenedorNosotros { 
+    display: grid;
     grid-template-columns: 30% 70%;
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 10px;
@@ -161,15 +168,6 @@ a { text-decoration: none;
     padding: 3.5rem;
     background-color: #24789D;
   }
-
-
-.contacto h2{ font-family: 'Press Start 2P', cursive;
-    font-size: 2rem;
-    color:#24789D;
-padding: 2rem;}
-
-.contacto form { padding: 2rem;
-width: 50%;}
 
 .seguinos { 
     font-family: 'Press Start 2P', cursive;
@@ -265,21 +263,6 @@ width: 50%;}
     padding: 4rem;
     text-align: center;}
 
-.sucursales { font-family: 'Press Start 2P', cursive; }
-
-.sucursales h2 { color: #24789D;
-font-size: 2rem;
-padding: 2rem;
-width: 50%;}
-
-.sucursales h3 { padding-left: 2rem;
-font-size: 1.5rem;}
-
-.sucursales p { font-size: 1rem;
-padding: 2rem;}
-
-.sucursales img { padding: 2rem;}
-
 /* estilos correspondientes al html sobreNosotros */
 
 .gridNosotros { 
@@ -369,80 +352,81 @@ padding: 2rem;}
 
 .contenedorMenu { 
     background-color: #24789D;
-    width: 100vw;
+    background-size: cover;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    width: 100vmaxs;
     justify-content: space-between;
     align-items:center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: auto 1fr;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: auto;
     grid-template-areas:
-    "menuH2 menuH2a menuH2b"
-    "menuImagenes menuImagenes1 menuImagenes2";
+    "cardMenu cardMenu1 cardMenu2";
 }
 
-.menuH2 {
-    grid-area: menuH2;
+.cardMenu {
+    grid-area: cardMenu;
     display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cardMenu h2 {
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.cardMenu img {
+    width: 100;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.cardMenu1 {
+    grid-area: cardMenu1;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 20;
 }
-.menuH2a {
-    grid-area: menuH2a;
+.cardMenu1 h2 {
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.cardMenu1 img {
+    width: 100;
+    padding: 1rem;
+}
+.cardMenu2 {
+    grid-area: cardMenu2;
     display: flex;
+    width: 100%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 20;
 }
-
-.menuH2b {
-    grid-area: menuH2b;
-    display: flex;
+.cardMenu2 h2 {
+    font-size: 2rem;
     justify-content: center;
     align-items: center;
-    font-size: 20;
 }
 
-.menuImagens {
-    grid-area: menuImagenes;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+.cardMenu2 img {
+    width: 100;
+    padding: 1rem;
 }
-
-.menuImagens1 {
-    grid-area: menuImagenes1;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-}
-
-.menuImagens2 {
-    grid-area: menuImagenes2;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    object-fit: cover;
-}
-
-.menuImagenes img,
-.menuImagenes1 img,
-.menuImagenes2 img {
-  max-width: 100%;
-  max-height: 100%;
-  justify-content: center;
-  align-items: center;
-
-}
-
 /* estilos ramen dumplings baos */
 
 .estiloMenu { 
     font-family: 'Press Start 2P', cursive; 
     padding: 2rem;
+    padding-bottom: 10rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
@@ -507,3 +491,102 @@ padding: 2rem;}
     align-self: center; 
     padding: 2rem;
   }
+
+  /* estilos correspondientes al html contacto */
+
+.gridContacto {
+    margin-bottom: 10rem;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "contactoFormulario sucursales";    
+}
+.contactoFormulario {
+    grid-area: contactoFormulario;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.contactoFormulario h2{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    color:#24789D;
+    padding: 2rem;
+    margin: 5rem;}
+
+.contactoFormulario form { 
+    font-family:'Press Start 2P', cursive;
+    font-size: 16px;
+    padding: 4rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10rem;
+    border-radius: 3px;
+    background-color: #24789D;
+    width: 350px;
+}
+.contactoFormulario form input {
+    padding: 0.5rem;
+}
+.sucursales { 
+    font-family: 'Press Start 2P', cursive;
+    grid-area: sucursales;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.sucursales h2 { 
+    color: #24789D;
+    font-size: 2rem;
+    padding: 2rem;
+    margin-top: 5rem;
+
+  }
+
+.sucursales h3 { 
+  font-size: 1.5rem;}
+  
+.sucursales p {
+    font-size: 1rem;
+    padding: 2rem;
+    margin-top: 0%;}
+
+.sucursales iframe {
+    padding-bottom: 5rem;
+}
+  
+
+
+  /* Estilos para tablets con una resolución de 768px */
+
+@media (max-width: 1024px) {
+
+.contenedorNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navBar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    font-size: 16px;
+}
+
+.navBar a {
+    margin: 0.5rem;
+}
+
+
+}
