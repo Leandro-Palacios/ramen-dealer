@@ -566,7 +566,7 @@ a { text-decoration: none;
   
 
 
-  /* Estilos para tablets con una resolución de 768px */
+  /* Estilos para tablets con una resolución de 1024px */
 
 @media (max-width: 1024px) {
 
@@ -580,13 +580,361 @@ a { text-decoration: none;
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
     font-size: 16px;
 }
 
-.navBar a {
-    margin: 0.5rem;
+.contenedorMenu { 
+    background-color: #24789D;
+    background-size: cover;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    width: 130%;
+    justify-content: space-between;
+    align-items:center;
+    display: flex;
+    flex-direction: column;
 }
 
+.cardMenu {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cardMenu h2 {
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.cardMenu img {
+    width: 100;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.cardMenu1 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20;
+}
+.cardMenu1 h2 {
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.cardMenu1 img {
+    width: 100;
+    padding: 1rem;
+}
+.cardMenu2 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20;
+}
+.cardMenu2 h2 {
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+}
 
+.cardMenu2 img {
+    width: 100;
+    padding: 1rem;
+}
+
+/* html contacto */
+
+.contenedorNavAzul { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #24789D;
+}
+.contenedorNavAzul a{
+    font-size: 16px;
+    margin: 0%;
+}
+.navbarAzul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    gap: 15px;
+    font-size: 16px;
+    background-color: #24789D;
+    width: 100%;
+}
+
+.gridContacto {
+    margin-bottom: 10rem;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "contactoFormulario sucursales";    
+}
+.contactoFormulario {
+    grid-area: contactoFormulario;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.contactoFormulario h2{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    color:#24789D;
+    padding: 2rem;
+    margin: 5rem;}
+
+.contactoFormulario form { 
+    font-family:'Press Start 2P', cursive;
+    font-size: 16px;
+    padding: 4rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10rem;
+    border-radius: 3px;
+    background-color: #24789D;
+    width: 350px;
+}
+.contactoFormulario form input {
+    padding: 0.5rem;
+}
+.sucursales { 
+    font-family: 'Press Start 2P', cursive;
+    grid-area: sucursales;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.sucursales h2 { 
+    color: #24789D;
+    font-size: 2rem;
+    padding: 2rem;
+    margin-top: 5rem;
+
+  }
+
+.sucursales h3 { 
+  font-size: 1.5rem;}
+  
+.sucursales p {
+    font-size: 1rem;
+    padding: 2rem;
+    margin-top: 0%;}
+
+.sucursales iframe {
+    padding-bottom: 5rem;
+    width: 70%;
+}
+
+}
+
+/* adaptacion a 320px */
+
+@media (max-width: 320px) {
+
+.contenedorNav {
+    width: 43rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.contenedorNav h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    
+}
+
+.navbar {
+   flex-direction: column;
+}
+
+.navbar li {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+}
+.contenedorMenu { 
+    background-color: #24789D;
+    background-size: cover;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    width: 100vmaxs;
+    justify-content: space-between;
+    align-items:center;
+    display: flex;
+    flex-direction: column;
+}
+.cardMenu {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cardMenu h2 {
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.cardMenu img {
+    width: 75%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.cardMenu1 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20;
+}
+.cardMenu1 h2 {
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.cardMenu1 img {
+    width: 75%;;
+    padding: 1rem;
+}
+.cardMenu2 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20;
+}
+.cardMenu2 h2 {
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardMenu2 img {
+    width: 75%;;
+    padding: 1rem;
+}
+/* html contacto */
+
+.contenedorNavAzul { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #24789D;
+    width: 120%;
+}
+.contenedorNavAzul a{
+    font-size: 14px;
+    margin: 0%;
+    display: flex;
+    text-align: center;
+}
+.navbarAzul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    gap: 15px;
+    font-size: 16px;
+    background-color: #24789D;
+    width: 100%;
+}
+
+.gridContacto {
+    margin-bottom: 10rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: auto ;
+    grid-template-areas: 
+    "contactoFormulario"
+    "sucursales";    
+}
+.contactoFormulario {
+    grid-area: contactoFormulario;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.contactoFormulario h2{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    color:#24789D;
+    padding: 2rem;
+    margin: 5rem;}
+
+.contactoFormulario form { 
+    font-family:'Press Start 2P', cursive;
+    font-size: 16px;
+    padding: 4rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10rem;
+    border-radius: 3px;
+    background-color: #24789D;
+    width: 350px;
+}
+.contactoFormulario form input {
+    padding: 0.5rem;
+}
+.sucursales { 
+    font-family: 'Press Start 2P', cursive;
+    grid-area: sucursales;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.sucursales h2 { 
+    color: #24789D;
+    font-size: 2rem;
+    padding: 2rem;
+    margin-top: 5rem;
+
+  }
+
+.sucursales h3 { 
+  font-size: 1.5rem;}
+  
+.sucursales p {
+    font-size: 1rem;
+    padding: 2rem;
+    margin-top: 0%;}
+
+.sucursales iframe {
+    padding-bottom: 5rem;
+    width: 70%;
+}
 }
