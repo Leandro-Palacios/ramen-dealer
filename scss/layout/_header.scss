@@ -1,0 +1,32 @@
+
+
+header {
+        display: flex;
+        flex-direction: row;
+        justify-content: baseline;
+            a {
+                text-decoration: none;
+                font-family: 'Press Start 2P', cursive;
+                color:black;
+                padding-bottom: 2rem;
+                    h1 {
+                        font-family: 'Bungee Shade', cursive;
+                        font-size: 4rem;
+                        padding-left: 1rem;
+                    }
+            }
+            nav {
+                ul {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    list-style: none;
+                    padding-top: 4rem;
+                    padding-left: 4rem;
+                    gap: 30px;
+                    font-size: 2rem;
+                    }
+                }
+            }   
+

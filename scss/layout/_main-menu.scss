@@ -1,0 +1,69 @@
+main {
+    .contenedorMenu { 
+        @include grid (repeat(3,1fr),auto,none,"cardMenu cardMenu1 cardMenu2",space-between,center);
+        background-color: $color-principal;
+        background-size: cover;
+        padding-top: 5rem;
+        padding-bottom: 10rem;
+        width: 100vmaxs;
+        
+    }
+    .cardMenu {
+        grid-area: cardMenu;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cardMenu h2 {
+        font-size: 2rem;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        font-family: 'Press Start 2P', cursive;
+        color: black;
+    }
+    .cardMenu img {
+        width: 100;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+    .cardMenu1 {
+        grid-area: cardMenu1;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 20;
+    }
+    .cardMenu1 h2 {
+        font-size: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .cardMenu1 img {
+        width: 100;
+        padding: 1rem;
+    }
+    .cardMenu2 {
+        grid-area: cardMenu2;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 20;
+    }
+    .cardMenu2 h2 {
+        font-size: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cardMenu2 img {
+        width: 100;
+        padding: 1rem;
+    }
+}

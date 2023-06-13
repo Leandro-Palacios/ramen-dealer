@@ -1,0 +1,21 @@
+footer {
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: $color-principal;
+        padding: 3rem;}
+
+    div { 
+        h3 {
+            font-family: 'Press Start 2P', cursive;}
+    }
+    div {
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            gap: 2rem;
+        }
+    }
+}

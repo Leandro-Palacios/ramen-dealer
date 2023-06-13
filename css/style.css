@@ -1,940 +1,272 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html{
-    font-size: 62.5%;
-}
-
-body { 
-    background-image: url(../assets/imagenes/fondo-pagina-web.png);
-    background-size: cover;
-    min-height: 100vh;
-
-}
-
-h1 {
-    font-family: 'Bungee Shade', cursive;
-    font-size: 4rem;
-    padding-left: 1rem;
-}
-
-a { text-decoration: none;
-    font-family: 'Press Start 2P', cursive;
-    color:black;
-    padding-bottom: 2rem;
-}
-
-/* barra de navegacion con y sin color de fondo */
-
-.navbarAzul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding-top: 4rem;
-    padding-left: 4rem;
-    gap: 30px;
-    font-size: 2rem;
-    background-color: #24789D;
-    width: 100%;
-}
-
-.navbar { 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding-top: 4rem;
-    padding-left: 4rem;
-    gap: 30px;
-    font-size: 2rem;
-}
-
-.contenedorNav { 
-    display: flex;
-    flex-direction: row;
-    justify-content: baseline;
-}
-
-.contenedorNavAzul { 
-    display: flex;
-    flex-direction: row;
-    justify-content: baseline;
-    background-color: #24789D;
-}
-
-/* estilo correspondiente al html index */
-
-.sobreNosotros {
-    display: flex;
-    width: 100%;
-}
-.contenedorNosotros { 
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: repeat(4, 1fr);
-    grid-gap: 10px;
-    grid-template-areas:
-    "h2 ramenDibujo"
-    "p ramenDibujo"
-    "a ramenDibujo"
-    ". ramenDibujo";
-    
- }
-.contenedorNosotros div { display: flex;
-    justify-content: space-evenly;}
-
-.contenedorNosotros h2 { 
-    font-family: 'Press Start 2P', cursive;
-    color:#24789D;
-    padding: 1rem;
-    grid-column: 1; 
-    grid-row: 1;
-    grid-area: h2;
-    justify-self: center; 
-    align-self: flex-end ;
-    font-size: 25px; 
-}
-
-.contenedorNosotros p {font-family: 'Press Start 2P', cursive;
-    padding: 1rem;
-    grid-column: 1; 
-    grid-row: 2 / span 2;
-    grid-area: p;
-    justify-self: center; /* Centrar horizontalmente en la columna */
-    align-self: flex-start;
-    font-size: 20px;
-    margin-top: 0%;
-    margin-left: 5rem;
-}
-
-.ramenDibujo { 
-    grid-area: ramenDibujo;
-    padding: 2rem;
-    object-fit: cover;
-    width: 70%;
-    grid-column: 2; /* Segunda columna */
-    grid-row: 1 / span 4; /* Ocupa las filas 1 a 6 */
-    justify-self: center; /* Centrar horizontalmente en la columna */
-    align-self: center;
-}
-
-.haceTuPedido { 
-    grid-column: 1; 
-    grid-row: 3; 
-    grid-area: a;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    background-color: red;
-    padding: 10px 20px;
-    text-align: center;
-    justify-self: center;
-    align-self: center; 
-    padding: 2rem;
-}
-
-.take {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20vh;
-  }
-  
-  .take h2 {
-    position: absolute;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 25px;
-    border: 0.4rem solid black;
-    background-color: white;
-    padding: 2rem;
-    text-align: center;
-    width: 30%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .caja1 {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 3.5rem;
-    background-color: #24789D;
-  }
-
-.seguinos { 
-    font-family: 'Press Start 2P', cursive;
-    padding: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 3rem;
-    width: 100%;}
-
-.seguinos ul {
-    justify-content: right;
-}
-
-.redes {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 2rem;
-}
-
-.seguinos2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-family: 'Press Start 2P', cursive;
-    background-color: #24789D;
-    padding: 3rem;
-    
-}
-
-.menuNavegador { background-color: #24789D;
-    padding-bottom: 1rem;
-}
-
-.promociones { 
-    font-family: 'Press Start 2P', cursive;
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 1rem;
-    grid-template-areas:
-    "promo promo"
-    "p1Des p2Martes";
-}
-
-.promo { 
-    grid-area: promo;
-    color: #24789D;
-    border-style: solid; 
-    border-width: 0.4rem;
-    border-color: black;
-    background-color: white;
-    height: 5rem;
-    width: fit-content;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-self: center;
-    align-self: center;
-    font-size: 25px;
-}
-
-.p1Des { 
-    grid-area: p1;
-    background-color: #24789D;
-    color: white;
-    border-style: solid; 
-    border-color: #24789D;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 7rem;
-    font-size: 20px;
-    width: fit-content;
-    padding: 5rem;}
-    
-
-.p2Martes { 
-    grid-area: p2;
-    background-color: #24789D;
-    color: white;
-    border-style: solid; 
-    border-color: #24789D;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 7rem;
-    font-size: 20px;
-    width: fit-content;
-    padding: 4rem;
-    text-align: center;}
-
-/* estilos correspondientes al html sobreNosotros */
-
-.gridNosotros { 
-    display: grid; 
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: auto auto auto auto auto auto auto auto;
-    grid-template-areas:
-    "jefeDeCocina imagenAndreas"
-    "p1Andreas imagenAndreas"
-    ". imagenAndreas"
-    ". imagenAndreas"
-    "imagenResto trayectoria "
-    "imagenResto p2Todo"
-    "imagenResto ."
-    "imagenResto ."    
-    ;
-    gap: 10px;}
-
-.jefeDeCocina {
-    grid-area: jefeDeCocina;
-    padding: 2rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 20px;}
-
-.p1Andreas {
-    grid-area: p1Andreas;
-    font-size: 20px;
-    justify-items: center;
-    justify-self: center;
-    align-self: center;
-    text-align: center; 
-    width: 100%;
-    margin: 2rem;
-    font-family: 'Press Start 2P', cursive;}
-
-.imagenAndreas {
-    grid-area: imagenAndreas;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    object-fit: cover;
-    width: 100%;
-    margin-right: 2rem;}
-
-.imagenResto {
-    grid-area:imagenResto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-    margin: auto;}
-
-.p2Todo {
-    grid-area: p2Todo;
-    font-size: 20px;
-    justify-items: center;
-    justify-self: center;
-    align-self: center;
-    text-align: center; 
-    width: 100%;
-    margin: 2rem;
-    font-family: 'Press Start 2P', cursive;}
-
-.trayectoria {
-    grid-area: trayectoria;
-    padding: 2rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 20px;}
-
-
-
-/* estilo corresponde al html menu */
-
-.contenedorMenu { 
-    background-color: #24789D;
-    background-size: cover;
-    padding-top: 5rem;
-    padding-bottom: 10rem;
-    width: 100vmaxs;
-    justify-content: space-between;
-    align-items:center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "cardMenu cardMenu1 cardMenu2";
-}
-
-.cardMenu {
-    grid-area: cardMenu;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.cardMenu h2 {
-    font-size: 2rem;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-}
-.cardMenu img {
-    width: 100;
-    padding: 1rem;
-    margin-bottom: 2rem;
-}
-.cardMenu1 {
-    grid-area: cardMenu1;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 20;
-}
-.cardMenu1 h2 {
-    font-size: 2rem;
-    justify-content: center;
-    align-items: center;
-}
-.cardMenu1 img {
-    width: 100;
-    padding: 1rem;
-}
-.cardMenu2 {
-    grid-area: cardMenu2;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 20;
-}
-.cardMenu2 h2 {
-    font-size: 2rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.cardMenu2 img {
-    width: 100;
-    padding: 1rem;
-}
-/* estilos ramen dumplings baos */
-
-.estiloMenu { 
-    font-family: 'Press Start 2P', cursive; 
-    padding: 2rem;
-    padding-bottom: 10rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
-    "menuSeleccion menuSeleccion"
-    "menuParrafos menuImagen"
-    "haceTuPedido1 haceTuPedido1"; }
-
-.menuImagen { 
-    display: flex;
-    width: 100%;
-    padding: 2rem;
-    grid-area: menuImagen;
-    justify-content: center;
-    align-content: center;
-}
-
-.menuImagen img {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.menuSeleccion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    grid-area: menuSeleccion;
-    font-size: 25px;
-    margin-bottom: 5rem;
-}
-
-.menuParrafos {
-    grid-area: menuParrafos;
-    font-family: 'Press Start 2P', cursive;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 20px;
-    justify-content: center;
-    
-  }
-
-.haceTuPedido1 {
-    grid-area: haceTuPedido1;
-    display: flex;
-    justify-self: center;
-    align-self: center;
-  }
-
-  .haceTuPedido1 a {
-    border: none;
-    border-radius: 10px;
-    color: white;
-    background-color: red;
-    padding: 10px 20px;
-    text-align: center;
-    justify-self: center;
-    align-self: center; 
-    padding: 2rem;
-  }
-
-  /* estilos correspondientes al html contacto */
-
-.gridContacto {
-    margin-bottom: 10rem;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "contactoFormulario sucursales";    
-}
-.contactoFormulario {
-    grid-area: contactoFormulario;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-.contactoFormulario h2{
-    font-family: 'Press Start 2P', cursive;
-    font-size: 2rem;
-    color:#24789D;
-    padding: 2rem;
-    margin: 5rem;}
-
-.contactoFormulario form { 
-    font-family:'Press Start 2P', cursive;
-    font-size: 16px;
-    padding: 4rem;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10rem;
-    border-radius: 3px;
-    background-color: #24789D;
-    width: 350px;
-}
-.contactoFormulario form input {
-    padding: 0.5rem;
-}
-.sucursales { 
-    font-family: 'Press Start 2P', cursive;
-    grid-area: sucursales;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    
-}
-
-.sucursales h2 { 
-    color: #24789D;
-    font-size: 2rem;
-    padding: 2rem;
-    margin-top: 5rem;
-
-  }
-
-.sucursales h3 { 
-  font-size: 1.5rem;}
-  
-.sucursales p {
-    font-size: 1rem;
-    padding: 2rem;
-    margin-top: 0%;}
-
-.sucursales iframe {
-    padding-bottom: 5rem;
-}
-  
-
-
-  /* Estilos para tablets con una resolución de 1024px */
-
-@media (max-width: 1024px) {
-
-.contenedorNav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.navBar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    font-size: 16px;
-}
-
-.contenedorMenu { 
-    background-color: #24789D;
-    background-size: cover;
-    padding-top: 5rem;
-    padding-bottom: 10rem;
-    width: 130%;
-    justify-content: space-between;
-    align-items:center;
-    display: flex;
-    flex-direction: column;
-}
-
-.cardMenu {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.cardMenu h2 {
-    font-size: 2rem;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-}
-.cardMenu img {
-    width: 100;
-    padding: 1rem;
-    margin-bottom: 2rem;
-}
-.cardMenu1 {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 20;
-}
-.cardMenu1 h2 {
-    font-size: 2rem;
-    justify-content: center;
-    align-items: center;
-}
-.cardMenu1 img {
-    width: 100;
-    padding: 1rem;
-}
-.cardMenu2 {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 20;
-}
-.cardMenu2 h2 {
-    font-size: 2rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.cardMenu2 img {
-    width: 100;
-    padding: 1rem;
-}
-
-/* html contacto */
-
-.contenedorNavAzul { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #24789D;
-}
-.contenedorNavAzul a{
-    font-size: 16px;
-    margin: 0%;
-}
-.navbarAzul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding-top: 4rem;
-    padding-bottom: 2rem;
-    gap: 15px;
-    font-size: 16px;
-    background-color: #24789D;
-    width: 100%;
-}
-
-.gridContacto {
-    margin-bottom: 10rem;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "contactoFormulario sucursales";    
-}
-.contactoFormulario {
-    grid-area: contactoFormulario;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-.contactoFormulario h2{
-    font-family: 'Press Start 2P', cursive;
-    font-size: 2rem;
-    color:#24789D;
-    padding: 2rem;
-    margin: 5rem;}
-
-.contactoFormulario form { 
-    font-family:'Press Start 2P', cursive;
-    font-size: 16px;
-    padding: 4rem;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10rem;
-    border-radius: 3px;
-    background-color: #24789D;
-    width: 350px;
-}
-.contactoFormulario form input {
-    padding: 0.5rem;
-}
-.sucursales { 
-    font-family: 'Press Start 2P', cursive;
-    grid-area: sucursales;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    
-}
-
-.sucursales h2 { 
-    color: #24789D;
-    font-size: 2rem;
-    padding: 2rem;
-    margin-top: 5rem;
-
-  }
-
-.sucursales h3 { 
-  font-size: 1.5rem;}
-  
-.sucursales p {
-    font-size: 1rem;
-    padding: 2rem;
-    margin-top: 0%;}
-
-.sucursales iframe {
-    padding-bottom: 5rem;
-    width: 70%;
-}
-
-}
-
-/* adaptacion a 320px */
-
-@media (max-width: 320px) {
-
-.contenedorNav {
-    width: 43rem;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem;
-}
-
-.contenedorNav h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-    
-}
-
-.navbar {
-   flex-direction: column;
-}
-
-.navbar li {
-    margin-right: 0;
-    margin-bottom: 0.5rem;
-}
-.contenedorMenu { 
-    background-color: #24789D;
-    background-size: cover;
-    padding-top: 5rem;
-    padding-bottom: 10rem;
-    width: 100vmaxs;
-    justify-content: space-between;
-    align-items:center;
-    display: flex;
-    flex-direction: column;
-}
-.cardMenu {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.cardMenu h2 {
-    font-size: 2rem;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-}
-.cardMenu img {
-    width: 75%;
-    padding: 1rem;
-    margin-bottom: 2rem;
-}
-.cardMenu1 {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 20;
-}
-.cardMenu1 h2 {
-    font-size: 2rem;
-    justify-content: center;
-    align-items: center;
-}
-.cardMenu1 img {
-    width: 75%;;
-    padding: 1rem;
-}
-.cardMenu2 {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 20;
-}
-.cardMenu2 h2 {
-    font-size: 2rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.cardMenu2 img {
-    width: 75%;;
-    padding: 1rem;
-}
-/* html contacto */
-
-.contenedorNavAzul { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #24789D;
-    width: 120%;
-}
-.contenedorNavAzul a{
-    font-size: 14px;
-    margin: 0%;
-    display: flex;
-    text-align: center;
-}
-.navbarAzul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding-top: 4rem;
-    padding-bottom: 2rem;
-    gap: 15px;
-    font-size: 16px;
-    background-color: #24789D;
-    width: 100%;
-}
-
-.gridContacto {
-    margin-bottom: 10rem;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: auto ;
-    grid-template-areas: 
-    "contactoFormulario"
-    "sucursales";    
-}
-.contactoFormulario {
-    grid-area: contactoFormulario;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-.contactoFormulario h2{
-    font-family: 'Press Start 2P', cursive;
-    font-size: 2rem;
-    color:#24789D;
-    padding: 2rem;
-    margin: 5rem;}
-
-.contactoFormulario form { 
-    font-family:'Press Start 2P', cursive;
-    font-size: 16px;
-    padding: 4rem;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10rem;
-    border-radius: 3px;
-    background-color: #24789D;
-    width: 350px;
-}
-.contactoFormulario form input {
-    padding: 0.5rem;
-}
-.sucursales { 
-    font-family: 'Press Start 2P', cursive;
-    grid-area: sucursales;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    
-}
-
-.sucursales h2 { 
-    color: #24789D;
-    font-size: 2rem;
-    padding: 2rem;
-    margin-top: 5rem;
-
-  }
-
-.sucursales h3 { 
-  font-size: 1.5rem;}
-  
-.sucursales p {
-    font-size: 1rem;
-    padding: 2rem;
-    margin-top: 0%;}
-
-.sucursales iframe {
-    padding-bottom: 5rem;
-    width: 70%;
-}
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(../assets/imagenes/fondo-pagina-web.png);
+  background-size: cover;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+}
+header a {
+  text-decoration: none;
+  font-family: "Press Start 2P", cursive;
+  color: black;
+  padding-bottom: 2rem;
+}
+header a h1 {
+  font-family: "Bungee Shade", cursive;
+  font-size: 4rem;
+  padding-left: 1rem;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding-top: 4rem;
+  padding-left: 4rem;
+  gap: 30px;
+  font-size: 2rem;
+}
+
+main section .contenedorNosotros {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-template-areas: "h2 ramenDibujo" "p ramenDibujo" "a ramenDibujo" ". ramenDibujo";
+}
+main section h2 {
+  font-family: "Press Start 2P", cursive;
+  color: #24789D;
+  padding: 1rem;
+  grid-column: 1;
+  grid-row: 1;
+  grid-area: h2;
+  justify-self: center;
+  align-self: flex-end;
+  font-size: 25px;
+}
+main section p {
+  font-family: "Press Start 2P", cursive;
+  padding: 1rem;
+  grid-column: 1;
+  grid-row: 2/span 2;
+  grid-area: p;
+  justify-self: center;
+  align-self: flex-start;
+  font-size: 20px;
+  margin-top: 0%;
+  margin-left: 5rem;
+}
+main section .ramenDibujo {
+  grid-area: ramenDibujo;
+  padding: 2rem;
+  object-fit: cover;
+  width: 70%;
+  grid-column: 2;
+  grid-row: 1/span 4;
+  justify-self: center;
+  align-self: center;
+}
+main section .haceTuPedido {
+  grid-column: 1;
+  grid-row: 3;
+  grid-area: a;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: red;
+  padding: 10px 20px;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  padding: 2rem;
+  font-family: "Press Start 2P", cursive;
+}
+main section .take {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+main section .caja1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 3.5rem;
+  background-color: #24789D;
+}
+main section .take h2 {
+  position: absolute;
+  font-family: "Press Start 2P", cursive;
+  font-size: 25px;
+  border: 0.4rem solid black;
+  background-color: white;
+  padding: 2rem;
+  text-align: center;
+  width: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .promociones {
+  font-family: "Press Start 2P", cursive;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  grid-template-areas: "promo promo" "p1Des p2Martes";
+}
+main .promo {
+  grid-area: promo;
+  color: #24789D;
+  border-style: solid;
+  border-width: 0.4rem;
+  border-color: black;
+  background-color: white;
+  height: 5rem;
+  width: fit-content;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  align-self: center;
+  font-size: 25px;
+}
+main .p1Des {
+  grid-area: p1;
+  background-color: #24789D;
+  color: white;
+  border-style: solid;
+  border-color: #24789D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7rem;
+  font-size: 20px;
+  width: fit-content;
+  padding: 5rem;
+}
+main .p2Martes {
+  grid-area: p2;
+  background-color: #24789D;
+  color: white;
+  border-style: solid;
+  border-color: #24789D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7rem;
+  font-size: 20px;
+  width: fit-content;
+  padding: 4rem;
+  text-align: center;
+}
+
+footer section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #24789D;
+  padding: 3rem;
+}
+footer div h3 {
+  font-family: "Press Start 2P", cursive;
+}
+footer div ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 2rem;
+}
+
+main .contenedorMenu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: none;
+  grid-template-areas: "cardMenu cardMenu1 cardMenu2";
+  justify-content: space-between;
+  align-content: center;
+  background-color: #24789D;
+  background-size: cover;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+  width: 100vmaxs;
+}
+main .cardMenu {
+  grid-area: cardMenu;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .cardMenu h2 {
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  font-family: "Press Start 2P", cursive;
+  color: black;
+}
+main .cardMenu img {
+  width: 100;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+main .cardMenu1 {
+  grid-area: cardMenu1;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20;
+}
+main .cardMenu1 h2 {
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+main .cardMenu1 img {
+  width: 100;
+  padding: 1rem;
+}
+main .cardMenu2 {
+  grid-area: cardMenu2;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20;
+}
+main .cardMenu2 h2 {
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+main .cardMenu2 img {
+  width: 100;
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
