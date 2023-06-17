@@ -13,6 +13,12 @@ main {
         grid-area: menuSeleccion;
         font-size: 25px;
         margin-bottom: 5rem;
+
+        h2 {
+            align-items: center;
+            text-align: center;
+            color: black;
+        }
     }
 
     .menuParrafos  {
@@ -34,15 +40,15 @@ main {
     padding: 2rem;
     grid-area: menuImagen;
     justify-content: center;
-    align-content: center;}
+    align-content: center;
 
-    .img {
+    img {
         width: 100%;
         display: flex;
         justify-content: center;
         align-content: center;
     }
-
+}
 .haceTuPedido1 {
     grid-area: haceTuPedido1;
     display: flex;

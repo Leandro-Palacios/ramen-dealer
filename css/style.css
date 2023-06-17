@@ -57,7 +57,7 @@ main section h2 {
   grid-row: 1;
   grid-area: h2;
   justify-self: center;
-  align-self: flex-end;
+  align-self: center;
   font-size: 25px;
 }
 main section p {
@@ -292,6 +292,11 @@ main .estiloMenu .menuSeleccion {
   font-size: 25px;
   margin-bottom: 5rem;
 }
+main .estiloMenu .menuSeleccion h2 {
+  align-items: center;
+  text-align: center;
+  color: black;
+}
 main .estiloMenu .menuParrafos {
   grid-area: menuParrafos;
   font-family: "Press Start 2P", cursive;
@@ -310,7 +315,7 @@ main .menuImagen {
   justify-content: center;
   align-content: center;
 }
-main .img {
+main .menuImagen img {
   width: 100%;
   display: flex;
   justify-content: center;
