@@ -49,7 +49,7 @@ main section .contenedorNosotros {
   grid-gap: 10px;
   grid-template-areas: "h2 ramenDibujo" "p ramenDibujo" "a ramenDibujo" ". ramenDibujo";
 }
-main section h2 {
+main section .nosotrosH2 {
   font-family: "Press Start 2P", cursive;
   color: #24789D;
   padding: 1rem;
@@ -104,14 +104,14 @@ main section .take {
   align-items: center;
   height: 20vh;
 }
-main section .caja1 {
+main section .take .caja1 {
   display: flex;
   justify-content: center;
   width: 100%;
   padding: 3.5rem;
   background-color: #24789D;
 }
-main section .take h2 {
+main section .take .take h2 {
   position: absolute;
   font-family: "Press Start 2P", cursive;
   font-size: 25px;
@@ -133,7 +133,7 @@ main .promociones {
   gap: 1rem;
   grid-template-areas: "promo promo" "p1Des p2Martes";
 }
-main .promo {
+main .promociones .promo {
   grid-area: promo;
   color: #24789D;
   border-style: solid;
@@ -150,7 +150,7 @@ main .promo {
   align-self: center;
   font-size: 25px;
 }
-main .p1Des {
+main .promociones .p1Des {
   grid-area: p1;
   background-color: #24789D;
   color: white;
@@ -163,8 +163,9 @@ main .p1Des {
   font-size: 20px;
   width: fit-content;
   padding: 5rem;
+  text-align: center;
 }
-main .p2Martes {
+main .promociones .p2Martes {
   grid-area: p2;
   background-color: #24789D;
   color: white;
@@ -195,6 +196,71 @@ footer div ul {
   flex-direction: row;
   list-style: none;
   gap: 2rem;
+}
+
+main .gridContacto {
+  margin-bottom: 10rem;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "contactoFormulario sucursales";
+}
+main .gridContacto .contactoFormulario {
+  grid-area: contactoFormulario;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+main .gridContacto .contactoFormulario h2 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 2rem;
+  color: #24789D;
+  padding: 2rem;
+  margin: 5rem;
+}
+main .gridContacto .contactoFormulario form {
+  font-family: "Press Start 2P", cursive;
+  font-size: 16px;
+  padding: 4rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rem;
+  border-radius: 3px;
+  background-color: #24789D;
+  width: 350px;
+}
+main .gridContacto .contactoFormulario form input {
+  padding: 0.5rem;
+}
+main .gridContacto .sucursales {
+  font-family: "Press Start 2P", cursive;
+  grid-area: sucursales;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+main .gridContacto .sucursales h2 {
+  color: #24789D;
+  font-size: 2rem;
+  padding: 2rem;
+  margin-top: 5rem;
+}
+main .gridContacto .sucursales h3 {
+  font-size: 1.5rem;
+}
+main .gridContacto .sucursales p {
+  font-size: 1rem;
+  padding: 2rem;
+  margin-top: 0%;
+}
+main .gridContacto .sucursales iframe {
+  padding-bottom: 5rem;
 }
 
 main .contenedorMenu {
@@ -246,6 +312,7 @@ main .cardMenu1 h2 {
   justify-content: center;
   align-items: center;
   color: black;
+  font-family: "Press Start 2P", cursive;
 }
 main .cardMenu1 img {
   width: 100%;
@@ -265,6 +332,7 @@ main .cardMenu2 h2 {
   justify-content: center;
   align-items: center;
   color: black;
+  font-family: "Press Start 2P", cursive;
 }
 main .cardMenu2 img {
   width: 100%;
@@ -337,6 +405,79 @@ main .haceTuPedido1 a {
   justify-self: center;
   align-self: center;
   padding: 2rem;
+}
+
+main .gridNosotros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
+  grid-template-areas: "jefeDeCocina imagenAndreas" "p1Andreas imagenAndreas" ". imagenAndreas" ". imagenAndreas" "imagenResto trayectoria " "imagenResto p2Todo" "imagenResto ." "imagenResto .";
+  gap: 10px;
+}
+main .jefeDeCocina {
+  grid-area: jefeDeCocina;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: 20px;
+}
+main .p1Andreas {
+  grid-area: p1Andreas;
+  font-size: 20px;
+  justify-items: center;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  width: 100%;
+  margin: 2rem;
+  font-family: "Press Start 2P", cursive;
+}
+main .imagenAndreas {
+  grid-area: imagenAndreas;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  object-fit: cover;
+  width: 100%;
+  margin-right: 2rem;
+}
+main .imagenResto {
+  grid-area: imagenResto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+main .p2Todo {
+  grid-area: p2Todo;
+  font-size: 20px;
+  justify-items: center;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  width: 100%;
+  margin: 2rem;
+  font-family: "Press Start 2P", cursive;
+}
+main .trayectoria {
+  grid-area: trayectoria;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
