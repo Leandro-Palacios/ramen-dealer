@@ -15,6 +15,7 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-decoration: none;
     }
     .cardMenu h2 {
         font-size: 2rem;
@@ -23,6 +24,10 @@ main {
         margin-top: 2rem;
         font-family: 'Press Start 2P', cursive;
         color: black;
+        text-decoration: none;
+        &:hover{ color: red;}
+
+        a {text-decoration: none;}
     }
     .cardMenu img {
         width: 100%;
@@ -44,6 +49,7 @@ main {
         align-items: center;
         color: black;
         font-family:'Press Start 2P', cursive ;
+        &:hover{ color: red;}
     }
     .cardMenu1 img {
         width: 100%;
@@ -57,6 +63,7 @@ main {
         justify-content: center;
         align-items: center;
         font-size: 20;
+        }
     }
     .cardMenu2 h2 {
         font-size: 2rem;
@@ -64,10 +71,11 @@ main {
         align-items: center;
         color: black;
         font-family:'Press Start 2P', cursive ;
+        text-decoration: none;
+        &:hover{ color: red;}
     }
     
     .cardMenu2 img {
         width: 100%;
         padding: 1rem;
     }
-}

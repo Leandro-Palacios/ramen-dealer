@@ -1,21 +1,47 @@
 footer {
-    section {
+    .seguinos {
+        font-family: 'Press Start 2P', cursive;
+        padding: 1rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        background-color: $color-principal;
-        padding: 3rem;}
+        padding: 3rem;
+        width: 100%;}
 
     div { 
         h3 {
             font-family: 'Press Start 2P', cursive;}
     }
     div {
-        ul {
+        .redes {
             display: flex;
             flex-direction: row;
             list-style: none;
             gap: 2rem;
         }
     }
+}
+
+footer {
+    .seguinos2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: 'Press Start 2P', cursive;
+        background-color: #24789D;
+        padding: 3rem;
+        }
+
+        div { 
+            h3 {
+                font-family: 'Press Start 2P', cursive;}
+        }
+        div {
+            .redes {
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                gap: 2rem;
+            }
+        }
 }

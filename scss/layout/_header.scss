@@ -1,6 +1,4 @@
-
-
-header {
+.contenedorNav {
         display: flex;
         flex-direction: row;
         justify-content: baseline;
@@ -13,10 +11,11 @@ header {
                         font-family: 'Bungee Shade', cursive;
                         font-size: 4rem;
                         padding-left: 1rem;
+                        &:hover{ color: #24789D;}
                     }
-            }
+                }
             nav {
-                ul {
+                .navbar {
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
@@ -26,7 +25,50 @@ header {
                     padding-left: 4rem;
                     gap: 30px;
                     font-size: 2rem;
+                    
+                    li { 
+                        a { &:hover{ color: #24789D;} } 
+                    }
                     }
                 }
-            }   
+            }
 
+
+            .contenedorNavAzul {
+                display: flex;
+                flex-direction: row;
+                justify-content: baseline;
+                background-color: #24789D;
+                    a {
+                        text-decoration: none;
+                        font-family: 'Press Start 2P', cursive;
+                        color:black;
+                        padding-bottom: 2rem;
+                        .menuNavegador {
+                                font-family: 'Bungee Shade', cursive;
+                                font-size: 4rem;
+                                padding-left: 1rem;
+                                background-color: #24789D;
+                                &:hover{ color: red;}
+                            }
+                        }
+                    nav {
+                        .navbarAzul {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            list-style: none;
+                            padding-top: 4rem;
+                            padding-left: 4rem;
+                            gap: 30px;
+                            font-size: 2rem;
+                            background-color: #24789D;
+                            width: 100%;
+
+                            li { 
+                                a { &:hover{ color: red;} } 
+                            }
+                            }
+                        }
+                    }

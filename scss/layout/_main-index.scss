@@ -58,18 +58,31 @@ main {
                     align-self: center; 
                     padding: 2rem;
                     font-family: 'Press Start 2P', cursive;
+                    text-decoration: none;
                 }
             }
-    
 
-
-section {
     .take {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 20vh;
+    
+    
+    & h2 {   
+        position: absolute;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 25px;
+        border: 0.4rem solid black;
+        background-color: white;
+        padding: 2rem;
+        text-align: center;
+        width: 30%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     
     .caja1 {
         display: flex;
@@ -78,22 +91,8 @@ section {
         padding: 3.5rem;
         background-color: #24789D;
         }
-    
-    .take h2 {
-            position: absolute;
-            font-family: 'Press Start 2P', cursive;
-            font-size: 25px;
-            border: 0.4rem solid black;
-            background-color: white;
-            padding: 2rem;
-            text-align: center;
-            width: 30%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            }
-        }
     }
+    
 
 
     .promociones { 
@@ -122,7 +121,8 @@ section {
         align-items: center;
         justify-self: center;
         align-self: center;
-        font-size: 25px;}
+        font-size: 25px;
+        margin-top: 6rem;}
         
 
             .p1Des { 

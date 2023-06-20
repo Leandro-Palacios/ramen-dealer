@@ -1,0 +1,428 @@
+@media (max-width: 320px) {
+
+    .contenedorNav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+            a {
+                text-decoration: none;
+                font-family: 'Press Start 2P', cursive;
+                color:black;
+                padding-bottom: 2rem;
+                    h1 {
+                        font-family: 'Bungee Shade', cursive;
+                        font-size: 3rem;
+                        &:hover{ color: #24789D;}
+                    }
+                }
+            nav {
+                .navbar {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    list-style: none;
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+                    gap: 15px;
+                    font-size: 1.5rem;
+                    
+                    li { 
+                        a { &:hover{ color: #24789D;} } 
+                    }
+                    }
+                }
+            }
+
+
+            .contenedorNavAzul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                background-color: #24789D;
+                padding: 0%;
+                margin: 0%;
+                    a {
+                        text-decoration: none;
+                        font-family: 'Press Start 2P', cursive;
+                        color:black;
+                        padding: 0%;
+                        margin: 0%;
+                        .menuNavegador {
+                                font-family: 'Bungee Shade', cursive;
+                                font-size: 3rem;
+                                background-color: #24789D;
+
+                                &:hover{ color: red;}
+                            }
+                        }
+                    nav {
+                        .navbarAzul {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            list-style: none;
+                            font-size: 1.5rem;
+                            background-color: #24789D;
+
+                            li { 
+                                a { &:hover{ color: red;} } 
+                            }
+                            }
+                        }
+                    }
+
+    /*html menu*/
+    main {
+        .contenedorMenu { 
+            display: flex;
+            flex-direction: column;
+            background-color: $color-principal;
+            background-size: cover;
+            padding-top: 5rem;
+            padding-bottom: 10rem;
+            width: 100vmaxs;
+            
+        }
+        .cardMenu {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+        .cardMenu h2 {
+            font-size: 1.5rem;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+            font-family: 'Press Start 2P', cursive;
+            color: black;
+            text-decoration: none;
+            &:hover{ color: red;}
+    
+            a {text-decoration: none;}
+        }
+        .cardMenu img {
+            width: 70%;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+        .cardMenu1 {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 20;
+        }
+        .cardMenu1 h2 {
+            font-size: 1.5rem;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-family:'Press Start 2P', cursive ;
+            &:hover{ color: red;}
+        }
+        .cardMenu1 img {
+            width: 70%;
+            padding: 1rem;
+        }
+        .cardMenu2 {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 20;
+            }
+        }
+        .cardMenu2 h2 {
+            font-size: 1.5rem;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-family:'Press Start 2P', cursive ;
+            text-decoration: none;
+            &:hover{ color: red;}
+        }
+        
+        .cardMenu2 img {
+            width: 70%;
+            padding: 1rem;
+        }
+    
+    /* html contacto */
+    
+    main {
+        .gridContacto {
+            margin-bottom: 10rem;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: repeat(1fr, 2);
+            grid-template-areas: 
+            "contactoFormulario"
+            "sucursales";  
+            
+            .contactoFormulario {
+                grid-area: contactoFormulario;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+    
+                h2 {
+                    font-family: 'Press Start 2P', cursive;
+                    font-size: 2rem;
+                    color:#24789D;
+                    padding: 2rem;
+                    margin: 5rem;
+                }
+    
+                form { 
+                    font-family:'Press Start 2P', cursive;
+                    font-size: 16px;
+                    padding: 4rem;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 10rem;
+                    border-radius: 3px;
+                    background-color: #24789D;
+                    
+    
+                    input {
+                        padding: 0.5rem;
+                }
+            }  
+        }
+    
+        .sucursales { 
+            font-family: 'Press Start 2P', cursive;
+            grid-area: sucursales;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            text-align: center;
+            
+            h2 { 
+                color: #24789D;
+                font-size: 2rem;
+                padding: 2rem;
+                margin-top: 5rem;
+            }
+    
+            h3 { 
+                font-size: 1.5rem;}
+            
+            p {
+                font-size: 1rem;
+                
+                }
+    
+            iframe {
+                padding-bottom: 5rem;
+                width: 60%;}
+        }
+    }
+    }
+
+        /* html index*/
+
+        main {
+            section {
+        
+        .contenedorNosotros { 
+            display: flex;
+            flex-direction: column;
+            align-items: center;}
+                    
+            .nosotrosH2 {
+                font-family: 'Press Start 2P', cursive;
+                color:#24789D;
+                padding: 1rem;
+                justify-self: center; 
+                align-self: center ;
+                font-size: 18px;  
+                margin-top: 3rem;}
+        
+                    p { font-family: 'Press Start 2P', cursive;
+                        text-align: center;
+                        justify-self: center; 
+                        font-size: 16px;
+                        margin-top: 3rem;}
+        
+                        .ramenDibujo { 
+                            padding: 2rem;
+                            object-fit: cover;
+                            width: 100%; 
+                            justify-self: center; 
+                            align-self: center;
+                        }
+        
+                        .haceTuPedido { 
+                            border: none;
+                            border-radius: 10px;
+                            color: white;
+                            background-color: red;
+                            padding: 10px 20px;
+                            text-align: center;
+                            justify-self: center;
+                            align-self: center; 
+                            padding: 2rem;
+                            font-family: 'Press Start 2P', cursive;
+                            text-decoration: none;
+                        }
+                    }
+        
+            .take {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 25vh;
+            
+            
+            & h2 {   
+                position: absolute;
+                font-family: 'Press Start 2P', cursive;
+                font-size: 18px;
+                border: 0.4rem solid black;
+                background-color: white;
+                padding: 2rem;
+                text-align: center;
+                width: 70%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+            .caja1 {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding: 3.5rem;
+                background-color: #24789D;
+                }
+            }
+            
+        
+        
+            .promociones { 
+                font-family: 'Press Start 2P', cursive;
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            
+                .promo { 
+                color: #24789D;
+                border-style: solid; 
+                border-width: 0.4rem;
+                border-color: black;
+                background-color: white;
+                height: 5rem;
+                width: fit-content;
+                padding: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                justify-self: center;
+                align-self: center;
+                font-size: 18px;
+                margin-top: 2rem;}
+                
+        
+                    .p1Des { 
+                        background-color: #24789D;
+                        color: white;
+                        border-style: solid; 
+                        border-color: #24789D;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 7rem;
+                        font-size: 16px;
+                        width: fit-content;
+                        padding: 5rem;
+                        text-align: center;}
+        
+                .p2Martes { 
+                    background-color: #24789D;
+                    color: white;
+                    border-style: solid; 
+                    border-color: #24789D;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 7rem;
+                    font-size: 16px;
+                    width: fit-content;
+                    padding: 4rem;
+                    text-align: center;}
+                }
+                }
+
+/* footer */
+footer {
+    .seguinos {
+        font-family: 'Press Start 2P', cursive;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+        width: 100%;}
+
+    div { 
+        h3 {
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            margin-bottom: 2rem;}
+    }
+    div {
+        .redes {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            list-style: none;
+            gap: 2rem;
+        }
+    }
+}
+
+footer {
+    .seguinos2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Press Start 2P', cursive;
+        background-color: #24789D;
+        padding: 3rem;
+        }
+
+        div { 
+            h3 {
+                font-family: 'Press Start 2P', cursive;
+                text-align: center;
+                margin-bottom: 2rem;}
+        }
+        div {
+            .redes {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                list-style: none;
+                gap: 2rem;
+            }
+        }
+}
+    }
