@@ -1,6 +1,6 @@
 footer {
     .seguinos {
-        font-family: 'Press Start 2P', cursive;
+        font-family: $fuente-principal;
         padding: 1rem;
         display: flex;
         flex-direction: row;
@@ -10,7 +10,7 @@ footer {
 
     div { 
         h3 {
-            font-family: 'Press Start 2P', cursive;}
+            font-family: $fuente-principal;}
     }
     div {
         .redes {
@@ -27,14 +27,14 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        font-family: 'Press Start 2P', cursive;
-        background-color: #24789D;
+        font-family: $fuente-principal;
+        background-color: $color-principal;
         padding: 3rem;
         }
 
         div { 
             h3 {
-                font-family: 'Press Start 2P', cursive;}
+                font-family: $fuente-principal;}
         }
         div {
             .redes {

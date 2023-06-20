@@ -15,15 +15,15 @@ main {
             align-items: center;
 
             h2 {
-                font-family: 'Press Start 2P', cursive;
+                font-family: $fuente-principal;
                 font-size: 2rem;
-                color:#24789D;
+                color:$color-principal;
                 padding: 2rem;
                 margin: 5rem;
             }
 
             form { 
-                font-family:'Press Start 2P', cursive;
+                font-family: $fuente-principal;
                 font-size: 16px;
                 padding: 4rem;
                 width: 50%;
@@ -33,7 +33,7 @@ main {
                 align-items: center;
                 margin-bottom: 10rem;
                 border-radius: 3px;
-                background-color: #24789D;
+                background-color: $color-principal;
                 width: 350px;
 
                 input {
@@ -43,7 +43,7 @@ main {
     }
 
     .sucursales { 
-        font-family: 'Press Start 2P', cursive;
+        font-family: $fuente-principal;
         grid-area: sucursales;
         display: flex;
         flex-direction: column;
@@ -53,7 +53,7 @@ main {
         text-align: center;
         
         h2 { 
-            color: #24789D;
+            color: $color-principal;
             font-size: 2rem;
             padding: 2rem;
             margin-top: 5rem;

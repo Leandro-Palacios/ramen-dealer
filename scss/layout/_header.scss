@@ -4,14 +4,14 @@
         justify-content: baseline;
             a {
                 text-decoration: none;
-                font-family: 'Press Start 2P', cursive;
+                font-family: $fuente-principal;
                 color:black;
                 padding-bottom: 2rem;
                     h1 {
                         font-family: 'Bungee Shade', cursive;
                         font-size: 4rem;
                         padding-left: 1rem;
-                        &:hover{ color: #24789D;}
+                        &:hover{ color: $color-principal;}
                     }
                 }
             nav {
@@ -27,7 +27,7 @@
                     font-size: 2rem;
                     
                     li { 
-                        a { &:hover{ color: #24789D;} } 
+                        a { &:hover{ color: $color-principal;} } 
                     }
                     }
                 }
@@ -38,17 +38,17 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: baseline;
-                background-color: #24789D;
+                background-color: $color-principal;
                     a {
                         text-decoration: none;
-                        font-family: 'Press Start 2P', cursive;
+                        font-family: $fuente-principal;
                         color:black;
                         padding-bottom: 2rem;
                         .menuNavegador {
                                 font-family: 'Bungee Shade', cursive;
                                 font-size: 4rem;
                                 padding-left: 1rem;
-                                background-color: #24789D;
+                                background-color: $color-principal;
                                 &:hover{ color: red;}
                             }
                         }
@@ -63,7 +63,7 @@
                             padding-left: 4rem;
                             gap: 30px;
                             font-size: 2rem;
-                            background-color: #24789D;
+                            background-color: $color-principal;
                             width: 100%;
 
                             li { 

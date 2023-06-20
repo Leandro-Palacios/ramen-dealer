@@ -265,6 +265,76 @@ footer div .redes {
   gap: 2rem;
 }
 
+main .estiloMenu {
+  font-family: "Press Start 2P", cursive;
+  padding: 2rem;
+  padding-bottom: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: none;
+  grid-template-areas: "menuSeleccion menuSeleccion" "menuParrafos menuImagen" "haceTuPedido1 haceTuPedido1";
+  justify-content: center;
+  align-content: center;
+}
+main .estiloMenu .menuSeleccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  grid-area: menuSeleccion;
+  font-size: 25px;
+  margin-bottom: 5rem;
+}
+main .estiloMenu .menuSeleccion h2 {
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+main .estiloMenu .menuParrafos {
+  grid-area: menuParrafos;
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  justify-content: center;
+}
+main .menuImagen {
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  grid-area: menuImagen;
+  justify-content: center;
+  align-content: center;
+}
+main .menuImagen img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+main .haceTuPedido1 {
+  grid-area: haceTuPedido1;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  text-decoration: none;
+}
+main .haceTuPedido1 a {
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: red;
+  padding: 10px 20px;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  padding: 2rem;
+  text-decoration: none;
+}
+
 main .gridContacto {
   margin-bottom: 10rem;
   display: grid;
@@ -327,6 +397,76 @@ main .gridContacto .sucursales p {
 }
 main .gridContacto .sucursales iframe {
   padding-bottom: 5rem;
+}
+
+main .estiloMenu {
+  font-family: "Press Start 2P", cursive;
+  padding: 2rem;
+  padding-bottom: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: none;
+  grid-template-areas: "menuSeleccion menuSeleccion" "menuParrafos menuImagen" "haceTuPedido1 haceTuPedido1";
+  justify-content: center;
+  align-content: center;
+}
+main .estiloMenu .menuSeleccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  grid-area: menuSeleccion;
+  font-size: 25px;
+  margin-bottom: 5rem;
+}
+main .estiloMenu .menuSeleccion h2 {
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+main .estiloMenu .menuParrafos {
+  grid-area: menuParrafos;
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  justify-content: center;
+}
+main .menuImagen {
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  grid-area: menuImagen;
+  justify-content: center;
+  align-content: center;
+}
+main .menuImagen img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+main .haceTuPedido1 {
+  grid-area: haceTuPedido1;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  text-decoration: none;
+}
+main .haceTuPedido1 a {
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: red;
+  padding: 10px 20px;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  padding: 2rem;
+  text-decoration: none;
 }
 
 main .contenedorMenu {
@@ -904,6 +1044,80 @@ main .trayectoria {
     padding: 4rem;
     text-align: center;
   }
+  /*sobre nosotros html */
+  main .gridNosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-template-areas: "jefeDeCocina imagenAndreas" "p1Andreas imagenAndreas" ". imagenAndreas" ". imagenAndreas" "imagenResto trayectoria " "imagenResto p2Todo" "imagenResto ." "imagenResto .";
+    gap: 10px;
+  }
+  main .jefeDeCocina {
+    grid-area: jefeDeCocina;
+    padding: 2rem;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Press Start 2P", cursive;
+    font-size: 18px;
+  }
+  main .p1Andreas {
+    grid-area: p1Andreas;
+    font-size: 18px;
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    margin: 1rem;
+    font-family: "Press Start 2P", cursive;
+  }
+  main .imagenAndreas {
+    grid-area: imagenAndreas;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    object-fit: cover;
+    width: 60%;
+    height: auto;
+    margin: auto;
+  }
+  main .imagenResto {
+    grid-area: imagenResto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    object-fit: cover;
+    width: 60%;
+    height: auto;
+    margin: auto;
+  }
+  main .p2Todo {
+    grid-area: p2Todo;
+    font-size: 16px;
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    margin: 1rem;
+    font-family: "Press Start 2P", cursive;
+  }
+  main .trayectoria {
+    grid-area: trayectoria;
+    padding: 2rem;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Press Start 2P", cursive;
+    font-size: 18px;
+  }
 }
 @media (max-width: 320px) {
   .contenedorNav {
@@ -1240,6 +1454,73 @@ main .trayectoria {
     width: fit-content;
     padding: 4rem;
     text-align: center;
+  }
+  /*sobre nosotros html */
+  main .gridNosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  main .jefeDeCocina {
+    padding: 2rem;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Press Start 2P", cursive;
+    font-size: 16px;
+  }
+  main .p1Andreas {
+    font-size: 18px;
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    margin: 1rem;
+    font-family: "Press Start 2P", cursive;
+  }
+  main .imagenAndreas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    object-fit: cover;
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+  main .imagenResto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    object-fit: cover;
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+  main .p2Todo {
+    font-size: 16px;
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    margin: 1rem;
+    font-family: "Press Start 2P", cursive;
+  }
+  main .trayectoria {
+    padding: 2rem;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Press Start 2P", cursive;
+    font-size: 16px;
   }
   /* footer */
   footer .seguinos {
@@ -1665,6 +1946,73 @@ main .trayectoria {
     align-items: center;
     list-style: none;
     gap: 2rem;
+  }
+  /*sobre nosotros html */
+  main .gridNosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  main .jefeDeCocina {
+    padding: 2rem;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Press Start 2P", cursive;
+    font-size: 16px;
+  }
+  main .p1Andreas {
+    font-size: 18px;
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    margin: 1rem;
+    font-family: "Press Start 2P", cursive;
+  }
+  main .imagenAndreas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    object-fit: cover;
+    width: 30%;
+    height: auto;
+    margin: auto;
+  }
+  main .imagenResto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    object-fit: cover;
+    width: 30%;
+    height: auto;
+    margin: auto;
+  }
+  main .p2Todo {
+    font-size: 16px;
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    margin: 1rem;
+    font-family: "Press Start 2P", cursive;
+  }
+  main .trayectoria {
+    padding: 2rem;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Press Start 2P", cursive;
+    font-size: 16px;
   }
 }
 

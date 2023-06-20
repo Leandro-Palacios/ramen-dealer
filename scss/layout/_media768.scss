@@ -367,4 +367,91 @@ main {
                 text-align: center;}
             }
             }
+
+            /*sobre nosotros html */
+
+            main{
+                .gridNosotros { 
+                    display: grid; 
+                    grid-template-columns: 1fr 1fr ;
+                    grid-template-rows: auto auto auto auto auto auto auto auto;
+                    grid-template-areas:
+                    "jefeDeCocina imagenAndreas"
+                    "p1Andreas imagenAndreas"
+                    ". imagenAndreas"
+                    ". imagenAndreas"
+                    "imagenResto trayectoria "
+                    "imagenResto p2Todo"
+                    "imagenResto ."
+                    "imagenResto ."    
+                    ;
+                    gap: 10px;}
+            
+                    .jefeDeCocina {
+                        grid-area: jefeDeCocina;
+                        padding: 2rem;
+                        width: 75%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        font-family: 'Press Start 2P', cursive;
+                        font-size: 18px;}
+                    
+                    .p1Andreas {
+                        grid-area: p1Andreas;
+                        font-size: 18px;
+                        justify-items: center;
+                        justify-self: center;
+                        align-self: center;
+                        text-align: center; 
+                        width: 100%;
+                        margin: 1rem;
+                        font-family: 'Press Start 2P', cursive;}
+            
+                    .imagenAndreas {
+                        grid-area: imagenAndreas;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 1rem;
+                        object-fit: cover;
+                        width: 60%;
+                        height: auto;
+                        margin: auto;
+                        }
+            
+                    .imagenResto {
+                        grid-area:imagenResto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 1rem;
+                        object-fit: cover;
+                        width: 60%;
+                        height: auto;
+                        margin: auto;}
+                        
+                    .p2Todo {
+                        grid-area: p2Todo;
+                        font-size: 16px;
+                        justify-items: center;
+                        justify-self: center;
+                        align-self: center;
+                        text-align: center; 
+                        width: 100%;
+                        margin: 1rem;
+                        font-family: 'Press Start 2P', cursive;}
+                        
+                    .trayectoria {
+                        grid-area: trayectoria;
+                        padding: 2rem;
+                        width: 75%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        font-family: 'Press Start 2P', cursive;
+                        font-size: 18px;}
+            }
 }
