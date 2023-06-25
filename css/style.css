@@ -1118,6 +1118,68 @@ main .trayectoria {
     font-family: "Press Start 2P", cursive;
     font-size: 18px;
   }
+  /* html ramen baos dumplings */
+  main .estiloMenu {
+    font-family: "Press Start 2P", cursive;
+    padding: 2rem;
+    padding-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .estiloMenu .menuSeleccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 5rem;
+  }
+  main .estiloMenu .menuSeleccion h2 {
+    align-items: center;
+    text-align: center;
+    color: black;
+  }
+  main .estiloMenu .menuParrafos {
+    font-family: "Press Start 2P", cursive;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+  }
+  main .menuImagen {
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    justify-content: center;
+    align-content: center;
+  }
+  main .menuImagen img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  main .haceTuPedido1 {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    text-decoration: none;
+  }
+  main .haceTuPedido1 a {
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: red;
+    padding: 10px 20px;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    padding: 2rem;
+    text-decoration: none;
+  }
 }
 @media (max-width: 320px) {
   .contenedorNav {
@@ -1273,13 +1335,11 @@ main .trayectoria {
   /* html contacto */
   main .gridContacto {
     margin-bottom: 10rem;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(1fr, 2);
-    grid-template-areas: "contactoFormulario" "sucursales";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   main .gridContacto .contactoFormulario {
-    grid-area: contactoFormulario;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1296,7 +1356,7 @@ main .trayectoria {
     font-family: "Press Start 2P", cursive;
     font-size: 16px;
     padding: 4rem;
-    width: 100%;
+    width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1310,7 +1370,6 @@ main .trayectoria {
   }
   main .gridContacto .sucursales {
     font-family: "Press Start 2P", cursive;
-    grid-area: sucursales;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1721,13 +1780,11 @@ main .trayectoria {
   /* html contacto */
   main .gridContacto {
     margin-bottom: 10rem;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(1fr, 2);
-    grid-template-areas: "contactoFormulario" "sucursales";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   main .gridContacto .contactoFormulario {
-    grid-area: contactoFormulario;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1758,7 +1815,6 @@ main .trayectoria {
   }
   main .gridContacto .sucursales {
     font-family: "Press Start 2P", cursive;
-    grid-area: sucursales;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -2013,6 +2069,69 @@ main .trayectoria {
     text-align: center;
     font-family: "Press Start 2P", cursive;
     font-size: 16px;
+  }
+  /* html ramen baos dumplings */
+  main .estiloMenu {
+    font-family: "Press Start 2P", cursive;
+    padding: 2rem;
+    padding-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .estiloMenu .menuSeleccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 5rem;
+  }
+  main .estiloMenu .menuSeleccion h2 {
+    align-items: center;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+  }
+  main .estiloMenu .menuParrafos {
+    font-family: "Press Start 2P", cursive;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    justify-content: center;
+  }
+  main .menuImagen {
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    justify-content: center;
+    align-content: center;
+  }
+  main .menuImagen img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  main .haceTuPedido1 {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    text-decoration: none;
+  }
+  main .haceTuPedido1 a {
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: red;
+    padding: 10px 20px;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    padding: 2rem;
+    text-decoration: none;
   }
 }
 

@@ -160,15 +160,11 @@
     main {
         .gridContacto {
             margin-bottom: 10rem;
-            display: grid;
-            grid-template-rows: auto;
-            grid-template-columns: repeat(1fr, 2);
-            grid-template-areas: 
-            "contactoFormulario"
-            "sucursales";  
+            display:flex;
+            flex-direction: column;
+            align-items: center;
             
             .contactoFormulario {
-                grid-area: contactoFormulario;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -204,7 +200,6 @@
     
         .sucursales { 
             font-family: 'Press Start 2P', cursive;
-            grid-area: sucursales;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -496,4 +491,78 @@ footer {
             font-family: 'Press Start 2P', cursive;
             font-size: 16px;}
 }
+/* html ramen baos dumplings */
+main {
+    .estiloMenu { 
+        font-family: 'Press Start 2P', cursive; 
+        padding: 2rem;
+        padding-bottom: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    .menuSeleccion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 5rem;
+
+        h2 {
+            align-items: center;
+            text-align: center;
+            color: black;
+            font-size: 18px;
+        }
+    }
+
+    .menuParrafos  {
+        
+        font-family: 'Press Start 2P', cursive;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+        justify-content: center;
+        
+    }
+}
+
+.menuImagen { 
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    justify-content: center;
+    align-content: center;
+
+    img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+}
+.haceTuPedido1 {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    text-decoration: none;
+
+    a {
+        border: none;
+        border-radius: 10px;
+        color: white;
+        background-color: red;
+        padding: 10px 20px;
+        text-align: center;
+        justify-self: center;
+        align-self: center; 
+        padding: 2rem;
+        text-decoration: none;
+    }
+}
+}
+
     }

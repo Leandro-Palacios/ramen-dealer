@@ -159,15 +159,11 @@
     main {
         .gridContacto {
             margin-bottom: 10rem;
-            display: grid;
-            grid-template-rows: auto;
-            grid-template-columns: repeat(1fr, 2);
-            grid-template-areas: 
-            "contactoFormulario"
-            "sucursales";  
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             
             .contactoFormulario {
-                grid-area: contactoFormulario;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -185,7 +181,7 @@
                     font-family:'Press Start 2P', cursive;
                     font-size: 16px;
                     padding: 4rem;
-                    width: 100%;
+                    width: 75%;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
@@ -203,7 +199,6 @@
     
         .sucursales { 
             font-family: 'Press Start 2P', cursive;
-            grid-area: sucursales;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
